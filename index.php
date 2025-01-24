@@ -154,6 +154,76 @@
             </div>
         </div>
 
+        <div class="w-100 item_banner_btn_sec ">
+            <div class="row w-100 m-0 p-0 bg-dark">
+                <div class="col-lg-3">
+                    <h4 class="fontHeading text-white">
+                        Our Best Solutions for Tv Lifts
+                    </h4>
+
+                </div>
+                <div class="col-lg-9 item_banner_btn_main p-0 m-0">
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <div class="item_banner_btn">
+                                <h5 class="fontHeading ">
+
+                                    Tv Pop Up Lift
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                </p>
+
+                                <div class="num_box">
+                                    01
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="item_banner_btn">
+                                <h5 class="fontHeading ">
+
+                                    Tv Pop Up Lift
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                </p>
+                                <div class="num_box">
+                                    02
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="item_banner_btn">
+                                <h5 class="fontHeading ">
+
+                                    Tv Pop Up Lift
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                </p>
+                                <div class="num_box">
+                                    03
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
         <section class="about_section">
             <div class="containerFull">
                 <div class="row">

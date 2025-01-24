@@ -804,13 +804,12 @@ p.email strong {
   /* background-color: #fffffe09;
   background-blend-mode: multiply; */
 }
-.contact_section .row{
+.contact_section .row {
   position: relative;
   z-index: 2;
-
 }
 .contact_section::after {
-background-color: #ffffffce;
+  background-color: #ffffffce;
   content: "";
   position: absolute;
   top: 0;
@@ -820,7 +819,6 @@ background-color: #ffffffce;
   height: 100%;
   z-index: 1;
   backdrop-filter: blur(1px);
-
 }
 .contact_info li {
   padding: 5px 0;
@@ -872,4 +870,34 @@ background-color: #ffffffce;
   border-color: var(--primary-color);
 
   box-shadow: 0 0 0 0.25rem #af956c00;
+}
+
+.item_banner_btn_sec h4 {
+  padding: 30px;
+  font-size: 29px;
+}
+.item_banner_btn_main .row {
+  --bs-gutter-x: 0rem;
+}
+.item_banner_btn {
+  padding: 30px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+.item_banner_btn h5 {
+  font-size: 25px;
+  color: #fff;
+}
+.item_banner_btn p{
+ margin-top: 8px;
+  color: #fff;
+}
+.num_box{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: #ffffff00;
+  -webkit-text-stroke:2px #ffffffce;
+  font-family: "Bricolage Grotesque", sans-serif;
 }
