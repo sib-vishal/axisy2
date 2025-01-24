@@ -883,21 +883,32 @@ p.email strong {
   padding: 30px;
   background-color: var(--primary-color);
   position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.item_banner_btn:hover {
+  padding: 30px;
+  background-color: var(--secondary-color);
+  position: relative;
+}
+.item_banner_btn.active {
+  padding: 30px;
+  background-color: var(--secondary-color);
+  position: relative;
 }
 .item_banner_btn h5 {
   font-size: 25px;
   color: #fff;
 }
-.item_banner_btn p{
- margin-top: 8px;
+.item_banner_btn p {
+  margin-top: 8px;
   color: #fff;
 }
-.num_box{
+.num_box {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 40px;
   color: #ffffff00;
-  -webkit-text-stroke:2px #ffffffce;
+  -webkit-text-stroke: 2px #ffffffce;
   font-family: "Bricolage Grotesque", sans-serif;
 }

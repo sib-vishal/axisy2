@@ -140,6 +140,44 @@
                         </div>
 
                     </div>
+                    <div class="swiper-slide" style="background-image:url(./images/tv-lift.jpg)">
+                        <div class="banner_slide">
+                            <div class="containerFull w-100">
+                                <h2 class="large_heading fontWeight600 fontHeading ">
+                                    Custom TV Pop Up Lifts
+                                    <br /> Perfect Fit for Every Space
+                                </h2>
+                                <p class="mt-3 banner-discription">
+                                    Transform your living spaces with AxisY's innovative TV lift solutions. Whether
+                                    you're designing a modern living room, a sleek office, or a cozy bedroom retreat,
+                                    our custom TV pop-up lifts seamlessly blend functionality with style.
+                                </p>
+                                <p class="mt-3 fontHeading fontWeight500  title quoteLine">
+                                    AxisY: Custom TV Lifts, Perfect Fit, Superior Quality!
+                                </p>
+
+                                <div class="mt-4">
+                                    <a class="callActionBtn" href="tel:8181 023 023">
+                                        <div class="iconPhone pulse">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="rightIcon">
+                                            <p class="fontWeight700 text-white-50 fontHeading">Call to our Experts</p>
+                                            <h4 class="title mt-1 text-light fontWeight700 fontHeading">
+                                                8181 023 023</h4>
+                                        </div>
+                                    </a>
+
+                                    <a class="d-inline-block ms-4 btn_1 fontHeading" href="#">
+                                        Explore More
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
                 <!-- <div class="btn_banner">
@@ -155,16 +193,16 @@
         </div>
 
         <div class="w-100 item_banner_btn_sec ">
-            <div class="row w-100 m-0 p-0 bg-dark">
-                <div class="col-lg-3">
+            <div class=" w-100 m-0 p-0 bg-dark">
+                <!-- <div class="col-lg-3">
                     <h4 class="fontHeading text-white">
                         Our Best Solutions for Tv Lifts
                     </h4>
 
-                </div>
-                <div class="col-lg-9 item_banner_btn_main p-0 m-0">
+                </div> -->
+                <div class="item_banner_btn_main p-0 m-0">
                     <div class="row ">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="item_banner_btn">
                                 <h5 class="fontHeading ">
 
@@ -182,7 +220,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="item_banner_btn">
                                 <h5 class="fontHeading ">
 
@@ -198,7 +236,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="item_banner_btn">
                                 <h5 class="fontHeading ">
 
@@ -209,6 +247,22 @@
                                 </p>
                                 <div class="num_box">
                                     03
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="item_banner_btn">
+                                <h5 class="fontHeading ">
+
+                                    Tv Pop Up Lift
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                </p>
+                                <div class="num_box">
+                                    04
                                 </div>
 
                             </div>
@@ -858,7 +912,7 @@
 
 
     <script>
-        var swiper = new Swiper(".banner-slider", {
+        var targetSwiper = new Swiper(".banner-slider", {
             spaceBetween: 0,
             // centeredSlides: true,
             slidesPerView: 1,
@@ -880,6 +934,33 @@
                 prevEl: ".prev_1",
             },
         });
+        function getActiveSlideForTarget() {
+            return targetSwiper.realIndex;
+        }
+
+
+        function updateActiveButton() {
+            const activeIndex = getActiveSlideForTarget();
+            const buttons = document.querySelectorAll(".item_banner_btn");
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            if (buttons[activeIndex]) {
+                buttons[activeIndex].classList.add("active");
+            }
+        }
+        targetSwiper.on('slideChange', function () {
+            console.log("Active Slide Index (specific Swiper):", getActiveSlideForTarget());
+            updateActiveButton();
+        });
+
+
+        updateActiveButton();
+
+        document.querySelectorAll(".item_banner_btn").forEach((btn, index) => {
+            btn.addEventListener("click", function () {
+                targetSwiper.slideToLoop(index); // Move to the corresponding slide (supports looped Swipers)
+            });
+        });
+
         var swiper = new Swiper(".client_slider", {
             spaceBetween: 0,
             // centeredSlides: true,
